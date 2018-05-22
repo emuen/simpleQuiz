@@ -1,4 +1,4 @@
-package com.example.melchior.myapplication;
+package com.emuen.simpleQuiz;
 
 import org.junit.Test;
 
