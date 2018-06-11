@@ -25,8 +25,13 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity {
 
     private TextView mTextMessage;
-    ArrayList<String> question = new ArrayList<>();
-    ArrayList<String> answer = new ArrayList<>();
+    private TextView firstOption;
+    private TextView secondtOption;
+    private TextView thirdOption;
+    private TextView fourthOption;
+
+    ArrayList<String> questions = new ArrayList<>();
+    ArrayList<String> answers = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,8 +51,8 @@ public class MainActivity extends AppCompatActivity {
                 Log.d("Simple", "Get user detail" + userDetail.toString());
 
                 // fetch email and name and store it in arraylist
-                question.add(userDetail.getString("question"));
-                answer.add(userDetail.getString("answer"));
+                questions.add(userDetail.getString("question"));
+                answers.add(userDetail.getString("answer"));
 
             }
         } catch (JSONException e) {
@@ -55,11 +60,21 @@ public class MainActivity extends AppCompatActivity {
             e.printStackTrace();
         }
 
-        Log.d("Simple", "onCreate " + question );
+        Log.d("Simple", "onCreate " + questions );
 
         mTextMessage = (TextView) findViewById(R.id.message);
+        firstOption = (TextView) findViewById(R.id.option1);
+        secondtOption = (TextView) findViewById(R.id.option2);
+        thirdOption = (TextView) findViewById(R.id.option3);
+        fourthOption = (TextView) findViewById(R.id.option4);
 
 
+
+        mTextMessage.setText(questions.get(0));
+        firstOption.setText("Berlin");
+        secondtOption.setText("Paris");
+        thirdOption.setText("København");
+        fourthOption.setText("London");
     }
 
     public String loadJSONFromResources() {
