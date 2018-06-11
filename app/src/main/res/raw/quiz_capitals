@@ -1,28 +1,204 @@
 {
   "questions": [
     {
+      "question": "Albanien",
+      "answer": "Tirana"
+    },
+    {
+      "question": "Andorra",
+      "answer": "Andorra la Vella"
+    },
+    {
+      "question": "Belgien",
+      "answer": "Bruxelles"
+    },
+    {
+      "question": "Bosnien-Hercegovina",
+      "answer": "Sarajevo"
+    },
+    {
+      "question": "Bulgarien",
+      "answer": "Sofia"
+    },
+    {
+      "question": "Cypern",
+      "answer": "Nicosia"
+    },
+    {
       "question": "Danmark",
       "answer": "København"
-    },
-    {
-      "question": "Sverige",
-      "answer": "Stokholm"
-    },
-    {
-      "question": "Tyskland",
-      "answer": "Berlin"
-    },
-    {
-      "question": "Frankrig",
-      "answer": "Paris"
     },
     {
       "question": "England",
       "answer": "London"
     },
     {
+      "question": "Estland",
+      "answer": "Tallinn"
+    },
+    {
+      "question": "Finland",
+      "answer": "Helsinki"
+    },
+    {
+      "question": "Frankrig",
+      "answer": "Paris"
+    },
+    {
+      "question": "Færøerne",
+      "answer": "Torshavn"
+    },
+    {
+      "question": "Gibraltar",
+      "answer": "Gibraltar"
+    },
+    {
+      "question": "Grækenland",
+      "answer": "Athen"
+    }
+    {
+      "question": "Guernsey",
+      "answer": "Saint Peter Port"
+    }
+    {
+      "question": "Holland",
+      "answer": "Amsterdam"
+    }
+    {
+      "question": "Hviderusland",
+      "answer": "Mindsk"
+    }
+    {
+      "question": "Island",
+      "answer": "Reykjavik"
+    }
+    {
+      "question": "Irland",
+      "answer": "Dublin"
+    }
+    {
+      "question": "Isle Of Man",
+      "answer": "Douglas"
+    }
+    {
+      "question": "Italien",
+      "answer": "Rom"
+    }
+    {
+      "question": "Jersey",
+      "answer": "Saint Heller"
+    }
+    {
+      "question": "Kosovo",
+      "answer": "Pristina"
+    }
+    {
+      "question": "Kroatien",
+      "answer": "Zagreb"
+    }
+    {
+      "question": "Letland",
+      "answer": "Riga"
+    }
+    {
+      "question": "Liechtenstein",
+      "answer": "Vaduz"
+    }
+    {
+      "question": "Luxembourg",
+      "answer": "Luxembourg"
+    }
+    {
+      "question": "Makedonien",
+      "answer": "Skopje"
+    }
+    {
+      "question": "Malta",
+      "answer": "Velletta"
+    }
+    {
+      "question": "Moldova",
+      "answer": "Chisinau"
+    }
+    {
+      "question": "Monaco",
+      "answer": "Monaco"
+    }
+    {
+      "question": "Montenegro",
+      "answer": "Podgorica"
+    }
+    {
+      "question": "Norge",
+      "answer": "Oslo"
+    }
+    {
+      "question": "Polen",
+      "answer": "Warszawa"
+    }
+    {
+      "question": "Portugal",
+      "answer": "Lissabon"
+    }
+    {
+      "question": "Rumænien",
+      "answer": "Bukerest"
+    }
+    {
+      "question": "Rosland",
+      "answer": "Moskva"
+    }
+    {
+      "question": "San Marino",
+      "answer": "San Marino"
+    }
+    {
+      "question": "Schweiz",
+      "answer": "Bern"
+    }
+    {
+      "question": "Serbien",
+      "answer": "Beograd"
+    }
+    {
+      "question": "Slovakiet",
+      "answer": "Bratislava"
+    }
+    {
+      "question": "Slovenien",
+      "answer": "Ljubjana"
+    }
+    {
       "question": "Spanien",
       "answer": "Madrid"
     }
+    {
+      "question": "Sverige",
+      "answer": "Stokholm"
+    },
+    {
+      "question": "Tjekkien",
+      "answer": "Prag"
+    }
+    {
+      "question": "Tyskland",
+      "answer": "Berlin"
+    }
+    {
+      "question": "Ukraine",
+      "answer": "Kijev"
+    }
+    {
+      "question": "Ungarn",
+      "answer": "Budapest"
+    }
+    {
+      "question": "Vertikanstaten",
+      "answer": "Vertikanstaten"
+    }
+    {
+      "question": "Østrig",
+      "answer": "Wign"
+    },
   ]
 }
