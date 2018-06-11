@@ -2,7 +2,27 @@
   "questions": [
     {
       "question": "Danmark",
-      "answer": "København",
+      "answer": "København"
+    },
+    {
+      "question": "Sverige",
+      "answer": "Stokholm"
+    },
+    {
+      "question": "Tyskland",
+      "answer": "Berlin"
+    },
+    {
+      "question": "Frankrig",
+      "answer": "Paris"
+    },
+    {
+      "question": "England",
+      "answer": "London"
+    },
+    {
+      "question": "Spanien",
+      "answer": "Madrid"
     }
   ]
 }
