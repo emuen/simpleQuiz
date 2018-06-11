@@ -9,20 +9,73 @@ import android.util.Log;
 import android.view.MenuItem;
 import android.widget.TextView;
 
+import org.json.JSONArray;
+import org.json.JSONException;
 import org.json.JSONObject;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.Reader;
+import java.io.StringWriter;
+import java.io.Writer;
+import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
     private TextView mTextMessage;
-
+    ArrayList<String> question = new ArrayList<>();
+    ArrayList<String> answer = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Log.d("Simple", "onCreate " + getResources().openRawResource(R.raw.quiz_capitals) );
+
+        try {
+            // get JSONObject from JSON file
+            JSONObject obj = new JSONObject(loadJSONFromResources());
+            // fetch JSONArray named users
+            JSONArray userArray = obj.getJSONArray("questions");
+            Log.d("Simple", "userArray " + userArray.length() );
+            // implement for loop for getting users list data
+            for (int i = 0; i < userArray.length(); i++) {
+                // create a JSONObject for fetching single user data
+                JSONObject userDetail = userArray.getJSONObject(i);
+                Log.d("Simple", "Get user detail" + userDetail.toString());
+
+                // fetch email and name and store it in arraylist
+                question.add(userDetail.getString("question"));
+                answer.add(userDetail.getString("answer"));
+
+            }
+        } catch (JSONException e) {
+            Log.d("Simple", "JSONEXCEPTION: " + e);
+            e.printStackTrace();
+        }
+
+        Log.d("Simple", "onCreate " + question );
 
         mTextMessage = (TextView) findViewById(R.id.message);
+
+
+    }
+
+    public String loadJSONFromResources() {
+        String json = null;
+        try {
+            InputStream is = getResources().openRawResource(R.raw.quiz_capitals);
+            int size = is.available();
+            byte[] buffer = new byte[size];
+            is.read(buffer);
+            is.close();
+            json = new String(buffer, "UTF-8");
+        } catch (IOException ex) {
+            ex.printStackTrace();
+            return null;
+        }
+        return json;
     }
 
 }
